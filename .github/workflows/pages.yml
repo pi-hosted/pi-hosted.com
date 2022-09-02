@@ -38,8 +38,8 @@ jobs:
           API_TOKEN_GITHUB: ${{ secrets.MAIN_TOKEN }}
         with:
           source_file: './landing.md'
-          destination_repo: 'Griffen8280/webpagetest'
-          destination_folder: '_pages'
+          destination_repo: 'Griffen8280/pi-hosted.com'
+          destination_folder: '/'
           user_email: 'pencechris1@gmail.com'
           user_name: 'Griffen8280'
           commit_message: 'Pushing the new landing.md'
