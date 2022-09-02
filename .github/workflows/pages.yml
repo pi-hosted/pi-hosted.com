@@ -38,11 +38,11 @@ jobs:
           API_TOKEN_GITHUB: ${{ secrets.MAIN_TOKEN }}
         with:
           source_file: './README.md'
-          destination_repo: 'Griffen8280/pi-hosted.com'
+          destination_repo: 'pi-hosted/pi-hosted.com'
           #destination_folder: '/'
           destination_branch: 'master'
-          user_email: 'pencechris1@gmail.com'
-          user_name: 'Griffen8280'
+          user_email: '72569+rmiddle@users.noreply.github.com'
+          user_name: 'rmiddle'
           commit_message: 'Pushing the new README.md'
       - name: Setup Pages
         uses: actions/configure-pages@v2
