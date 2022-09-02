@@ -37,13 +37,13 @@ jobs:
         env:
           API_TOKEN_GITHUB: ${{ secrets.MAIN_TOKEN }}
         with:
-          source_file: './landing.md'
+          source_file: './README.md'
           destination_repo: 'Griffen8280/pi-hosted.com'
           #destination_folder: '/'
           destination_branch: 'master'
           user_email: 'pencechris1@gmail.com'
           user_name: 'Griffen8280'
-          commit_message: 'Pushing the new landing.md'
+          commit_message: 'Pushing the new README.md'
       - name: Setup Pages
         uses: actions/configure-pages@v2
       - name: Build with Jekyll
