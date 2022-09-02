@@ -27,6 +27,22 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+      - name: Run script file
+        run: |
+           chmod +x ./getlanding.sh
+           ./getlanding.sh
+        shell: bash
+      - name: Pushes downloaded file
+        uses: dmnemec/copy_file_to_another_repo_action@main
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.MAIN_TOKEN }}
+        with:
+          source_file: './landing.md'
+          destination_repo: 'Griffen8280/webpagetest'
+          destination_folder: '_pages'
+          user_email: 'pencechris1@gmail.com'
+          user_name: 'Griffen8280'
+          commit_message: 'Pushing the new landing.md'
       - name: Setup Pages
         uses: actions/configure-pages@v2
       - name: Build with Jekyll
