@@ -9,7 +9,7 @@ This repository is a collection of tutorials for hosting a variety of server app
 
 ### Apps List
 
-See the list of apps included in this template [here](AppList.md).
+See the list of apps included in this template [here](https://raw.githubusercontent.com/pi-hosted/pi-hosted/master/docs/AppList.md).
 
 ### Installation
 Run `install-docker.sh`, to install docker, and add the current user to the docker usergroup.
