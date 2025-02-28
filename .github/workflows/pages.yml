@@ -39,7 +39,7 @@ jobs:
         with:
           source-files: './README.md'
           destination-username: 'pi-hosted'
-          destination-repository: 'pi-hosted/pi-hosted.com'
+          destination-repository: 'pi-hosted.com'
           destination-branch: 'master'
           #destination-directory: '/'
           commit-username: 'rmiddle'
