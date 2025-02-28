@@ -38,12 +38,13 @@ jobs:
           API_TOKEN_GITHUB: ${{ secrets.MAIN_TOKEN }}
         with:
           source-files: './README.md'
+          destination-username: 'pi-hosted'
           destination-repository: 'pi-hosted/pi-hosted.com'
-          destination-username: 'rmiddle'
+          destination-branch: 'master'
           #destination-directory: '/'
-          #destination_branch: 'master'
+          commit-username: 'rmiddle'
           commit-email: '72569+rmiddle@users.noreply.github.com'
-          #commit_message: 'Pushing the new README.md'
+          commit-message: 'Pushing the new README.md'
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Build with Jekyll
