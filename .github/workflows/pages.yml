@@ -37,7 +37,7 @@ jobs:
         env:
           API_TOKEN_GITHUB: ${{ secrets.MAIN_TOKEN }}
         with:
-          source_file: './README.md'
+          source-files: './README.md'
           destination-repository: 'pi-hosted/pi-hosted.com'
           destination-username: 'rmiddle'
           #destination-directory: '/'
