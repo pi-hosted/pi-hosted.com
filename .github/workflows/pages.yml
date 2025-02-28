@@ -33,17 +33,17 @@ jobs:
            ./getlanding.sh
         shell: bash
       - name: Pushes downloaded file
-        uses: dmnemec/copy_file_to_another_repo_action@main
+        uses: nkoppel/push-files-to-another-repository@v1.1.4
         env:
           API_TOKEN_GITHUB: ${{ secrets.MAIN_TOKEN }}
         with:
           source_file: './README.md'
-          destination_repo: 'pi-hosted/pi-hosted.com'
-          #destination_folder: '/'
-          destination_branch: 'master'
-          user_email: '72569+rmiddle@users.noreply.github.com'
-          user_name: 'rmiddle'
-          commit_message: 'Pushing the new README.md'
+          destination-repository: 'pi-hosted/pi-hosted.com'
+          destination-username: 'rmiddle'
+          #destination-directory: '/'
+          #destination_branch: 'master'
+          commit-email: '72569+rmiddle@users.noreply.github.com'
+          #commit_message: 'Pushing the new README.md'
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Build with Jekyll
